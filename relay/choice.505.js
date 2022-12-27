@@ -1,9 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/Consciousness_of_a_Stream
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Go further upstream"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Go further upstream"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["Go further upstream"], page_text));
 }

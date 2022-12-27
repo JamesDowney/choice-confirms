@@ -1,10 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/Melon_Collie_and_the_Infinite_Lameness
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="End His Suffering"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="End His Suffering"`);
-	page_text = page_text.replace(`value="Snag some Candles"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Snag some Candles"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["End His Suffering", "Snag some Candles"], page_text));
 }

@@ -1,9 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/The_Fast_and_the_Furry-ous
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Check out the Furry's Figurine Collection"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Check out the Furry's Figurine Collection"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["Check out the Furry's Figurine Collection"], page_text));
 }

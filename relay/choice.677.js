@@ -1,9 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/Copper_Feel
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Grab a Gear"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Grab a Gear"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["Grab a Gear"], page_text));
 }

@@ -1,10 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/Flavor_of_a_Raver
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Pick a Fight"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Pick a Fight"`);
-	page_text = page_text.replace(`value="Breathe Deeply"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Breathe Deeply"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["Pick a Fight", "Breathe Deeply"], page_text));
 }

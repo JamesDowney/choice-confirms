@@ -1,10 +1,11 @@
 const kol = require("kolmafia")
+const { addConfirm } = require("./choice-confirms")
+
+// https://kol.coldfront.net/thekolwiki/index.php/Putting_Off_Is_Off-Putting
 
 module.exports.main = function (page_text_encoded)
 {
 	var choice_override_script = require("relay/choice.ash");
 	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Look Under a Pile of Junk"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Look Under a Pile of Junk"`);
-	page_text = page_text.replace(`value="Roll in a Pile of Junk"`, `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')" value="Roll in a Pile of Junk"`);
-	kol.write(page_text);
+	kol.write(addConfirm(["Look Under a Pile of Junk", "Roll in a Pile of Junk"], page_text));
 }

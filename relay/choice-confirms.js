@@ -1,7 +1,7 @@
 /**
  * script tag to confirm a choice twice - currently only used for Ride the Rails in choice 1308
  */
-export var doubleConfirm =
+const doubleConfirm =
     `<script type="text/javascript">
         function doubleConfirm() {
             var val1 = confirm("Are you sure you want to spend 9 turns?");
@@ -17,7 +17,7 @@ export var doubleConfirm =
 /**
  * onClick attribute to confirm a choice
  */
-export var singleConfirm = `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')"`;
+const singleConfirm = `onclick="return confirm('This is probably not an ascension-optimal choice. Continue?')"`;
 
 /**
  * Adds a confirmation dialogue box to each choice provided on the page provided
@@ -25,10 +25,12 @@ export var singleConfirm = `onclick="return confirm('This is probably not an asc
  * @param {string} choicePage 
  * @returns altered page html
  */
-export function addConfirm(choiceOptions, choicePage) {
+function addConfirm(choiceOptions, choicePage) {
     var finalPage = choicePage;
     choiceOptions.forEach(option => {
         finalPage = finalPage.replace(`value="${option}"`, `${singleConfirm} value="${option}"`)
     });
     return finalPage;
 }
+
+module.exports = {doubleConfirm, singleConfirm, addConfirm}

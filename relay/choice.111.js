@@ -1,6 +1,6 @@
 const kol = require('kolmafia')
 const { addConfirmation } = require('./choice-confirm/choice-confirm')
-const choiceOverrideDecodePageText = require('relay/choice.ash')
+const choice_override_script = require('relay/choice.ash')
 
 const choice = {
     "111": {
@@ -43,7 +43,8 @@ const choice = {
 // https://kol.coldfront.net/thekolwiki/index.php/Malice_in_Chains
 
 module.exports.main = function (page_text_encoded) {
-    const page_text = choiceOverrideDecodePageText(page_text_encoded)
+    const page_text =
+        choice_override_script.choiceOverrideDecodePageText(page_text_encoded)
 
     var badChoices = [
         choice[111]['Rise and revolt'],

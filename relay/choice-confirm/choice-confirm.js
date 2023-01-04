@@ -18,7 +18,7 @@ const genericConfirmation =
  * Adds a confirmation dialogue box to each choice provided on the page provided
  * @param {string} choicePage
  * @param {number[]} choiceOptions
- * @param {string|undefined} confirmationPrompt 
+ * @param {string|undefined} confirmationPrompt
  * @returns Altered page html
  */
 function addConfirmation(choicePage, choiceOptions, confirmationPrompt) {
@@ -26,8 +26,8 @@ function addConfirmation(choicePage, choiceOptions, confirmationPrompt) {
     var finalPage = choicePage
     choiceOptions.forEach((option) => {
         finalPage = finalPage.replace(
-            `<form style="margin: 0px 0px 0px 0px;" name="choiceform${option}"`,
-            `<form style="margin: 0px 0px 0px 0px;" name="choiceform${option}" ${singleConfirm(
+            `name=choiceform${option}`,
+            `name=choiceform${option} ${singleConfirm(
                 confirmationPrompt
             )}`
         )

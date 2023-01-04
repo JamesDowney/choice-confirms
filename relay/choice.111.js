@@ -50,5 +50,5 @@ module.exports.main = function (page_text_encoded) {
         choice[111]['Serve your sentence'],
     ]
 
-    kol.write(addConfirmation(badChoices, page_text))
+    kol.write(addConfirmation(page_text, badChoices))
 }

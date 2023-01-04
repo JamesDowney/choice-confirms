@@ -1,7 +1,7 @@
 const kol = require('kolmafia')
 const { addConfirmation } = require('./choice-confirm/choice-confirm')
 const { choiceOverrideDecodePageText } = require('relay/choice.ash')
-const choice = require('./choice-confirm/choice_map.json')
+const { choice } = require('./choice-confirm/choice_map.json')
 
 // https://kol.coldfront.net/thekolwiki/index.php/Malice_in_Chains
 

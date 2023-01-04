@@ -17,7 +17,7 @@ const genericConfirmation =
 /**
  * Adds a confirmation dialogue box to each choice provided on the page provided
  * @param {string} choicePage
- * @param {int[]} choiceOptions
+ * @param {number[]} choiceOptions
  * @param {string|undefined} confirmationPrompt 
  * @returns Altered page html
  */

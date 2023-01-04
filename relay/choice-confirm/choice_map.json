@@ -32,5 +32,11 @@
     "927": {},
     "928": {},
     "1026": {},
-    "1308": {}
+    "1308": {
+        "Factory District Stop (2 Adventures)": 1,
+        "Warehouse District Stop (Free!)": 2,
+        "Just ride the rails (9 Adventures)": 6,
+        "Visit the Breakfast Counter": 7,
+        "Nevermind": 8
+    }
 }

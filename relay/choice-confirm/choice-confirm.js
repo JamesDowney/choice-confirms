@@ -28,7 +28,7 @@ function addConfirmation(choicePage, choiceOptions, confirmationPrompt) {
         finalPage = finalPage.replace(
             `<form style="margin: 0px 0px 0px 0px;" name="choiceform${option}"`,
             `<form style="margin: 0px 0px 0px 0px;" name="choiceform${option}" ${singleConfirm(
-                confirmDialogue
+                confirmationPrompt
             )}`
         )
     })

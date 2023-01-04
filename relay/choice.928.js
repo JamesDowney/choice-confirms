@@ -1,5 +1,5 @@
 const kol = require("kolmafia")
-const { addConfirm } = require("./choice-confirms")
+const { addConfirm } = require("./choice-confirm/choice-confirm")
 
 // https://kol.coldfront.net/thekolwiki/index.php/The_Blackberry_Cobbler
 

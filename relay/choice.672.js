@@ -1,5 +1,6 @@
 const kol = require("kolmafia")
-const { addConfirm } = require("./choice-confirms")
+const { addConfirm } = require("./choice-confirm/choice-confirms");
+
 
 // https://kol.coldfront.net/thekolwiki/index.php/There%27s_No_Ability_Like_Possibility
 

@@ -1,5 +1,5 @@
 const kol = require("kolmafia");
-const { doubleConfirm } = require("./choice-confirms");
+const { doubleConfirm } = require("./choice-confirm/choice-confirm");
 
 // https://kol.coldfront.net/thekolwiki/index.php/On_a_Downtown_Train
 

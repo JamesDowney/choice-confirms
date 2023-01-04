@@ -1,5 +1,6 @@
 const kol = require("kolmafia")
-const { addConfirm } = require("./choice-confirms")
+const { addConfirm } = require("./choice-confirm/choice-confirms");
+
 
 // https://kol.coldfront.net/thekolwiki/index.php/Home_on_the_Free_Range
 

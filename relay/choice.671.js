@@ -1,5 +1,6 @@
 const kol = require("kolmafia")
-const { addConfirm } = require("./choice-confirms")
+const { addConfirm } = require("./choice-confirm/choice-confirms");
+
 
 // https://kol.coldfront.net/thekolwiki/index.php/Out_in_the_Open_Source
 

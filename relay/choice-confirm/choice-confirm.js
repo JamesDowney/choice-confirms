@@ -4,7 +4,7 @@
  * @returns HTML script with text prompt
  */
 function singleConfirm(confirmationPrompt) {
-    return `onsubmit="return confirm(${confirmationPrompt})"`
+    return `onsubmit="return confirm('${confirmationPrompt}');"`
 }
 
 /**
@@ -12,7 +12,7 @@ function singleConfirm(confirmationPrompt) {
  * @constant
  */
 const genericConfirmation =
-    'This is probably not an ascension-optimal choice. Continue?'
+    "This is probably not an ascension-optimal choice. Continue?"
 
 /**
  * Adds a confirmation dialogue box to each choice provided on the page provided

@@ -78,32 +78,132 @@ const choice = {
         'Leave the drawers alone': 5,
     },
     611: {
+        // https://kol.coldfront.net/thekolwiki/index.php/The_Horror..._(A-Boo_Peak)
         'Elemental resistance test': 1,
         'Flee the scene': 2,
     },
-    669: {},
-    670: {},
-    671: {},
-    672: {},
-    673: {},
-    674: {},
-    675: {},
-    676: {},
-    677: {},
-    678: {},
-    923: {},
-    924: {},
-    925: {},
-    926: {},
-    927: {},
-    928: {},
-    1026: {},
+    669: {
+        // https://kol.coldfront.net/thekolwiki/index.php/The_Fast_and_the_Furry-ous
+        'Crawl Through the Heating Duct': 1,
+        "Check out the Furry's Figurine Collection": 2,
+        'Leave Through a Mousehole': 3,
+    },
+    670: {
+        // https://kol.coldfront.net/thekolwiki/index.php/You_Don%27t_Mess_Around_with_Gym
+        'Grab a Dumbbell': 1,
+        'Work Out': 2,
+        'Rifle the Gym Bag': 3,
+        'Check out the Mirror': 4,
+        'Leave through the Basement Window': 5,
+    },
+    671: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Out_in_the_Open_Source
+        'Check out the Dumbwaiter': 1,
+        'Mess with the Computer Equipment': 2,
+        "Check the Neckbeard's Giant Cargo Shorts": 3,
+        'Crawl through the Heating Vent': 4,
+    },
+    672: {
+        // https://kol.coldfront.net/thekolwiki/index.php/There%27s_No_Ability_Like_Possibility
+        'Rifle the Wallet-Purse-Leprechaun': 1,
+        'Read the Magazine-Orangutan-lamp': 2,
+        'Go out the Way You Came In': 3,
+    },
+    673: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Putting_Off_Is_Off-Putting
+        'Look Under a Pile of Junk': 1,
+        'Roll in a Pile of Junk': 2,
+        'Get out of Pile of Junk': 3,
+    },
+    674: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Huzzah!
+        'Exploreth the Writing Desk': 1,
+        'Turn on Ye Olde Television Set': 2,
+        'Seek the Egress Anon': 3,
+    },
+    675: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Melon_Collie_and_the_Infinite_Lameness
+        'End His Suffering': 1,
+        'Change up the Music': 2,
+        'Snag some Candles': 3,
+        'Gimme Steam': 4,
+    },
+    676: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Flavor_of_a_Raver
+        'Pick a Fight': 1,
+        'Breathe Deeply': 2,
+        'Raid the Crate': 3,
+        'Check Behind the Giant Poster': 4,
+    },
+    677: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Copper_Feel
+        'Harrumph in Disdain': 1,
+        'Investigate the Whirligigs and Gimcrackery': 2,
+        'Grab a Gear': 3,
+        'Go through the Crack': 4,
+    },
+    678: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Yeah,_You%27re_for_Me,_Punk_Rock_Giant
+        "Get the Punk's Attention": 1,
+        'Dig Through His Drawers': 2,
+        'Check behind the trash can': 3,
+        'Look Behind the Poster': 4,
+    },
+    923: {
+        // https://kol.coldfront.net/thekolwiki/index.php/All_Over_the_Map
+        'Head toward the blackberry patch': 1,
+        "Visit the blacksmith's cottage": 2,
+        'Go to the black gold mine': 3,
+        'Check out the black church': 4,
+    },
+    924: {
+        // https://kol.coldfront.net/thekolwiki/index.php/You_Found_Your_Thrill
+        'Attack the bushes': 1,
+        "Visit the cobbler's house": 2,
+        'Head toward the buzzing sound': 3,
+    },
+    925: {
+        // https://kol.coldfront.net/thekolwiki/index.php/The_Blackest_Smith
+        'How about a sword?': 1,
+        'A shield, maybe?': 2,
+        'A helmet, please.': 3,
+        'I would like pants.': 4,
+        'Nothing, thank you.': 5,
+    },
+    926: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Be_Mine
+        'Go left': 1,
+        'Go right': 2,
+        'Go down': 3,
+        'Never mine. I mean mind.': 4,
+    },
+    927: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Sunday_Black_Sunday
+        'Attend the Mass': 1,
+        'Dive into the orchestra pit': 2,
+        'Sneak out the black back, black Jack': 3,
+    },
+    928: {
+        // https://kol.coldfront.net/thekolwiki/index.php/The_Blackberry_Cobbler
+        'Make some slippers': 1,
+        'Make some moccasins': 2,
+        'Make some combat boots': 3,
+        'Make some galoshes': 4,
+        'Make like a tree and leave the house': 5,
+    },
+    1026: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Home_on_the_Free_Range
+        'Look under the bed': 1,
+        'Investigate the noisy drawer': 2,
+        'Leave through a vent': 3,
+    },
     1308: {
+        // https://kol.coldfront.net/thekolwiki/index.php/On_a_Downtown_Train
         'Factory District Stop (2 Adventures)': 1,
         'Warehouse District Stop (Free!)': 2,
         'Just ride the rails (9 Adventures)': 6,
         'Visit the Breakfast Counter': 7,
-        Nevermind: 8,
+        'Nevermind': 8,
     },
 }
 

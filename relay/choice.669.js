@@ -7,8 +7,9 @@ const { choice } = require('./choice-confirm/choice_map')
 
 module.exports.main = function (pageTextEncoded) {
     const pageText = choiceOverrideDecodePageText(pageTextEncoded)
-    const { choice } = require('./choice-confirm/choice_map')
-    kol.write(
-        addConfirmation(["Check out the Furry's Figurine Collection"], pageText)
-    )
+    const badChoices = [
+        choice[669]["Check out the Furry's Figurine Collection"],
+    ]
+
+    kol.write(addConfirmation(pageText, badChoices))
 }

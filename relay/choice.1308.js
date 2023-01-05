@@ -1,12 +1,16 @@
-const kol = require("kolmafia");
-const { doubleConfirm } = require("./choice-confirms");
+const kol = require('kolmafia')
+const { addConfirmation } = require('./choice-confirm/choice-confirm')
+const { choiceOverrideDecodePageText } = require('relay/choice.ash')
+const choice = require('./choice-confirm/choice_map')
 
 // https://kol.coldfront.net/thekolwiki/index.php/On_a_Downtown_Train
 
-module.exports.main = function (page_text_encoded)
-{
-	var choice_override_script = require("relay/choice.ash");
-	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	page_text = page_text.replace(`value="Just ride the rails (9 Adventures)">`, `onclick="return doubleConfirm()" value="Just ride the rails (9 Adventures)"> ${doubleConfirm}`);
-	kol.write(page_text);
+module.exports.main = function (pageTextEncoded) {
+    const pageText = choiceOverrideDecodePageText(pageTextEncoded)
+    const badChoices = [
+        choice[1308]['Factory District Stop (2 Adventures)'],
+        choice[1308]['Just ride the rails (9 Adventures)'],
+    ]
+
+    kol.write(addConfirmation(pageText, badChoices))
 }

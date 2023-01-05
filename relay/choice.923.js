@@ -1,11 +1,17 @@
-const kol = require("kolmafia")
-const { addConfirm } = require("./choice-confirms")
+const kol = require('kolmafia')
+const { addConfirmation } = require('./choice-confirm/choice-confirm')
+const { choiceOverrideDecodePageText } = require('relay/choice.ash')
+const { choice } = require('./choice-confirm/choice_map')
 
 // https://kol.coldfront.net/thekolwiki/index.php/All_Over_the_Map
 
-module.exports.main = function (page_text_encoded)
-{
-	var choice_override_script = require("relay/choice.ash");
-	var page_text = choice_override_script.choiceOverrideDecodePageText(page_text_encoded);
-	kol.write(addConfirm(["Visit the blacksmith's cottage", "Go to the black gold mine", "Check out the black church"], page_text));
+module.exports.main = function (pageTextEncoded) {
+    const pageText = choiceOverrideDecodePageText(pageTextEncoded)
+    const badChoices = [
+        choice[923]["Visit the blacksmith's cottage"],
+        choice[923]['Go to the black gold mine'],
+        choice[923]['Check out the black church'],
+    ]
+
+    kol.write(addConfirmation(pageText, badChoices))
 }

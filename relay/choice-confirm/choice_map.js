@@ -169,6 +169,12 @@ const choice = {
         'Check behind the trash can': 3,
         'Look Behind the Poster': 4,
     },
+    875: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Welcome_To_Our_ool_Table
+        'Hustle the ghost': 1,
+        'Hustle over to the other table and practice': 2,
+        'Hustle away': 3,
+    },
     923: {
         // https://kol.coldfront.net/thekolwiki/index.php/All_Over_the_Map
         'Head toward the blackberry patch': 1,

@@ -21,5 +21,5 @@ module.exports.main = function (pageTextEncoded) {
         )
     }
 
-    kol.write(addConfirmation(pageText))
+    kol.write(addConfirmation(pageText, badChoices))
 }

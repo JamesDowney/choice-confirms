@@ -44,6 +44,11 @@ const choice = {
         'Head down to the galley': 3,
         'Gallivant down to the head': 4,
     },
+    496: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Crate_Expectations_(Tavern_Cellar)
+        'Smash the crates': 1,
+        'Burn the crates': 2
+    },
     502: {
         // https://kol.coldfront.net/thekolwiki/index.php/Arboreal_Respite
         'Follow the old road': 1,
@@ -68,6 +73,21 @@ const choice = {
         'Investigate the dense foliage': 2,
         'Follow the coin': 3,
         'Give up and go back': 4,
+    },
+    513: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Staring_Down_the_Barrel
+        'Smash the barrel': 1,
+        'Freeze the Barrel': 2
+    },
+    514: {
+        // https://kol.coldfront.net/thekolwiki/index.php/1984_Had_Nothing_on_This_Cellar
+        'Dump out the crate.': 1,
+        'Stink them out': 2
+    },
+    515: {
+        // https://kol.coldfront.net/thekolwiki/index.php/A_Rat%27s_Home...
+        'Kick over the castle': 1,
+        'Scare the rats off': 2
     },
     523: {
         // https://kol.coldfront.net/thekolwiki/index.php/Death_Rattlin%27

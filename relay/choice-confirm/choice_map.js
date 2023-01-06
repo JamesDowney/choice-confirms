@@ -32,6 +32,13 @@ const choice = {
         "See what's behind Urn #3": 3,
         'Turn Away': 4,
     },
+    163: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Melvil_Dewey_Would_Be_Ashamed
+        'Hork the gray-bound volume': 1,
+        'Yoink the green-bound tome': 2,
+        'Gaffle the purple-bound book': 3,
+        'Leave without taking anything': 4,
+    },
     178: {
         // https://kol.coldfront.net/thekolwiki/index.php/Hammering_the_Armory
         'Dig through the stuff': 1,
@@ -175,6 +182,21 @@ const choice = {
         'Hustle over to the other table and practice': 2,
         'Hustle away': 3,
     },
+    888: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Take_a_Look,_it%27s_in_a_Book!_(Rise)
+        'Read "The Rise of the House of Spookyraven"': 1,
+        'Read "The Better Haunted Homes and Conservatories Cookbook"': 2,
+        'Read "Ancient Forbidden Unspeakable Evil, a Love Story"': 3,
+        "Reading is for losers. I'm outta here.": 4,
+    },
+    889: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Take_a_Look,_it%27s_in_a_Book!_(Fall)
+        'Read "The Fall of the House of Spookyraven"': 1,
+        'Read "To Serve Man... Delicious Cocktails"': 2,
+        'Read "Ancient Forbidden Unspeakable Yoga, a Beginner\'s Guide"': 3,
+        'Read the dictionary': 4,
+        "Reading is for losers. I'm outta here.": 5,
+    },
     923: {
         // https://kol.coldfront.net/thekolwiki/index.php/All_Over_the_Map
         'Head toward the blackberry patch': 1,
@@ -229,7 +251,7 @@ const choice = {
         'Warehouse District Stop (Free!)': 2,
         'Just ride the rails (9 Adventures)': 6,
         'Visit the Breakfast Counter': 7,
-        'Nevermind': 8,
+        Nevermind: 8,
     },
     1427: {
         // https://kol.coldfront.net/thekolwiki/index.php/The_Hidden_Junction

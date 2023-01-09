@@ -11,6 +11,54 @@ const choice = {
         'Kick the chef': 2,
         'Abscond with some goodies': 3,
     },
+    139: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Bait_and_Switch
+        'Take the bait and go wreak havoc': 1,
+        'Gaffle some bait for later': 2,
+        'Wake the cadet up and fight him': 3,
+    },
+    140: {
+        // https://kol.coldfront.net/thekolwiki/index.php/The_Thin_Tie-Dyed_Line
+        'The Munitions Yurt': 1,
+        'The Rations Yurt': 2,
+        'The Barracks Yurt': 3,
+    },
+    141: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Blockin%27_Out_the_Scenery
+        'The Chill-Out Yurt': 1,
+        'The Rations Yurt': 2,
+        'The H.A.S.H. Yurt': 3,
+    },
+    142: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Blockin%27_Out_the_Scenery
+        'The Chill-Out Yurt': 1,
+        'The Rations Yurt': 2,
+        'The Lookout Tower': 3,
+    },
+    143: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Catching_Some_Zetas
+        'Take the bombs and wreak some havoc': 1,
+        'Keep the bombs to use later': 2,
+        'Wake up the pledge and throw down': 3,
+    },
+    144: {
+        // https://kol.coldfront.net/thekolwiki/index.php/One_Less_Room_Than_In_That_Movie
+        'Supply Room': 1,
+        'Munitions Dump': 2,
+        "Officer's Lounge": 3,
+    },
+    145: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Fratacombs
+        'Wander this way': 1,
+        'Wander that way': 2,
+        'Wander the other way': 3,
+    },
+    146: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Fratacombs
+        'Wander this way': 1,
+        'Wander that way': 2,
+        'Screw this, head to the roof': 3,
+    },
     153: {
         // https://kol.coldfront.net/thekolwiki/index.php/Turn_Your_Head_and_Coffin
         'Investigate the fancy coffin': 1,
@@ -257,6 +305,18 @@ const choice = {
         // https://kol.coldfront.net/thekolwiki/index.php/The_Hidden_Junction
         'Fight the Screambat': 1,
         'Grab the meat': 2,
+    },
+    1433: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Sneaky,_Sneaky_(Frat_Warrior_Fatigues)
+        'Visit the Yurts': 1,
+        'Visit the yurt full of crates': 2,
+        'Stop by the signpost for further directions': 3,
+    },
+    1434: {
+        // https://kol.coldfront.net/thekolwiki/index.php/Sneaky,_Sneaky_(War_Hippy_Fatigues)
+        'Visit a dorm room': 1,
+        'Go into the fratacombs': 2,
+        'Check out the hallway': 3,
     },
 }
 
